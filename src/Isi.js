@@ -12,7 +12,7 @@ class Isi extends Component {
         listData:[],
         idEdit:null,
     };
-    this.url = "http://192.168.0.110/api/apinote.php";
+    this.url = "http://192.168.43.34/api/apinote.php";
   }
   componentDidMount(){
       this.ambilListData()

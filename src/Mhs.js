@@ -14,7 +14,7 @@ class Mhs extends Component {
         listData:[],
         idEdit:null,
     };
-    this.url = "http://192.168.0.110/api/apinote2.php";
+    this.url = "http://192.168.43.34/api/apinote2.php";
   }
   componentDidMount(){
       this.ambilListData()

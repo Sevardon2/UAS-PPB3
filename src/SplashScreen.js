@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
+import Home from './Home';
+import logo from './logo.png';
 
 import { StackActions } from '@react-navigation/native';
 
@@ -17,8 +19,13 @@ class SplashScreen extends Component {
 
     render(){
         return(
-            <View>
-                <Text>Splash Screen</Text>
+            <View style={{flex:1}}>
+            <View style={{flex:1}}></View>
+            <View style={{alignItems:'center', justifyContent:'center', flex:2}}>
+                <Image source={logo} style={{width: 216, height: 216}}></Image>
+                <Text style={{color:'black'}}>Loading...</Text>
+            </View>
+            <View style={{flex:1}}></View>
             </View>
         )
     }

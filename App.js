@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Button, Image, FlatList } from 'react-native';
 import { Card } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import SplashScreen from './src/SplashScreen';
 import Home from './src/Home';
 import Isi from './src/Isi';
 import Mhs from './src/Mhs';
@@ -12,8 +13,12 @@ const Stack = createNativeStackNavigator();
 
 function App(){
   return(
+    // <SplashScreen/>
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="SplashScreen" component={SplashScreen} options={{
+          headerShown: false
+        }}/>
         <Stack.Screen name="Home" component={Home}
         options={{
           title: "Data Kampus",
